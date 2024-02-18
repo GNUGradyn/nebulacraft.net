@@ -6,7 +6,7 @@ const Layout: React.FC = () => {
     return (
         <>
             <div id="imageBackground">
-                <img src="/mainLogo.svg" width="300" height="300"/>
+                <img src="/mainLogo.svg" style={{height: "80%"}}/>
                 <h2>Nebulacraft</h2>
             </div>
             <Navbar/>
