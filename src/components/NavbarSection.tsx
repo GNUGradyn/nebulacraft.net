@@ -1,19 +1,17 @@
 import { ReactElement, ReactNode } from "react"
 import { NavbarElementProps } from "./NavbarElement"
 
-interface NavbarButtonProps {
-    items: [{}]
-    children: ReactElement<NavbarElementProps>[]
+interface NavbarSection {
+    name: string
+    children: ReactElement<NavbarElementProps>[] | ReactElement<NavbarElementProps>
 }
 
-const NavbarButton: React.FC<NavbarButtonProps> = (props: NavbarButtonProps) => {
+const NavbarSection: React.FC<NavbarSection> = (props: NavbarSection) => {
     return (
         <div className="navbar-section">
-            {props.items.map(x => 
-            <div className="navbar-item">
-                {props.children}
-            </div>
-            )}
+            {props.children}
         </div>
     )
 }
+
+export default NavbarSection;
