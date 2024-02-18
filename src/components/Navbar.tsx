@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Navbar: React.FC = () => {
     return (
         <div id="navbar">
-            <img id="sicon" src="/mainLogo.svg"/>
+            <Link to={"/"}><img id="sicon" src="/mainLogo.svg"/></Link>
             <div>
 
             </div>
