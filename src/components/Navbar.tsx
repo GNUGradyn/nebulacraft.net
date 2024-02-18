@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
         <div id="navbar">
             <Link to={"/"}><img id="sicon" src="/mainLogo.svg"/></Link>
             <div>
-
+                
             </div>
             <p style={{marginRight: 10}}>IP: Nebulacraft.net</p>
         </div>
