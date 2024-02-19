@@ -31,7 +31,7 @@ body {
 }
 #imageBackground {
   background-image: url("space_background.png");
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -74,4 +74,29 @@ body {
 }
 .gamemode img {
   width: 10vw;
+}
+.navbar-item {
+  height: var(--navbar-height);
+  background: var(--nav-background);
+  display: flex;
+  width: 175px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-item p {
+  margin: 0;
+  padding: 0
+}
+.navbar-item:hover {
+  cursor: pointer;
+  background-color: var(--nav-hover-background);
+  color: hsl(276, 92%, 40%);;
+}
+.navbar-container {
+  transition: all 100ms linear;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.navbar-section:hover > .navbar-container{
+  transform: scaleY(1);
 }

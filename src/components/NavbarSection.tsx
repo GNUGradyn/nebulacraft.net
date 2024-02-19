@@ -1,5 +1,5 @@
-import { ReactElement, ReactNode } from "react"
-import { NavbarElementProps } from "./NavbarElement"
+import { ReactElement, ReactNode, useState } from "react"
+import NavbarElement, { NavbarElementProps } from "./NavbarElement"
 
 interface NavbarSection {
     name: string
@@ -7,9 +7,15 @@ interface NavbarSection {
 }
 
 const NavbarSection: React.FC<NavbarSection> = (props: NavbarSection) => {
+
+    const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
     return (
-        <div className="navbar-section">
-            {props.children}
+        <div className="navbar-section" onMouseOver={()=>{setIsExpanded(true)}} onMouseOut={()=>{setIsExpanded(false)}}>
+            <NavbarElement name={props.name} style={{backgroundColor: "Unset"}}/>
+            <div className="navbar-container">
+                {props.children}
+            </div>
         </div>
     )
 }
