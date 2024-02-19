@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
             <div style={{display: "flex"}}>
                 <NavbarSection name="Survival">
                     <NavbarElement name="Ranks" goto="survival/ranks"/>
-                    <NavbarElement name="Map" goto="survival/maps"/>
+                    <NavbarElement name="Map" goto="survival/map"/>
                 </NavbarSection>
                 <NavbarElement name="Rules" goto="rules" transparent/>
             </div>
