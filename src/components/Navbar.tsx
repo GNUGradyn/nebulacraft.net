@@ -6,11 +6,12 @@ const Navbar: React.FC = () => {
     return (
         <div id="navbar">
             <Link to={"/"}><img id="sicon" src="/mainLogo.svg"/></Link>
-            <div>
+            <div style={{display: "flex"}}>
                 <NavbarSection name="Survival">
-                    <NavbarElement name="Ranks"/>
-                    <NavbarElement name="Map"/>
+                    <NavbarElement name="Ranks" goto="survival/ranks"/>
+                    <NavbarElement name="Map" goto="survival/maps"/>
                 </NavbarSection>
+                <NavbarElement name="Rules" goto="rules" transparent/>
             </div>
             <p style={{marginRight: 10}}>IP: Nebulacraft.net</p>
         </div>

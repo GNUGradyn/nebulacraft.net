@@ -12,7 +12,7 @@ const NavbarSection: React.FC<NavbarSection> = (props: NavbarSection) => {
 
     return (
         <div className="navbar-section" onMouseOver={()=>{setIsExpanded(true)}} onMouseOut={()=>{setIsExpanded(false)}}>
-            <NavbarElement name={props.name} style={{backgroundColor: "Unset"}}/>
+            <NavbarElement name={props.name} transparent/>
             <div className="navbar-container">
                 {props.children}
             </div>
