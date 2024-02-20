@@ -52,6 +52,10 @@ const Rank: React.FC<RankProps> = (props: RankProps) => {
                     </div>
                     <div>
                         <h1>Rank missions</h1>
+                        {props.missions.map(x => <>
+                            <h2>{x.name}</h2>
+                            {x.meta.map(y => <p>{y}</p>)}
+                        </>)}
                     </div>
                 </>}
             </div>
