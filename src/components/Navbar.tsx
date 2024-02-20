@@ -11,6 +11,9 @@ const Navbar: React.FC = () => {
                     <NavbarElement name="Ranks" goto="survival/ranks"/>
                     <NavbarElement name="Map" goto="survival/map"/>
                 </NavbarSection>
+                <NavbarSection name="Creative">
+                    <NavbarElement name="Map" goto="creative/map"/>
+                </NavbarSection>
                 <NavbarElement name="Rules" goto="rules" transparent/>
             </div>
             <p style={{marginRight: 10}}>IP: Nebulacraft.net</p>
