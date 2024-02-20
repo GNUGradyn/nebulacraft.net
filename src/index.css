@@ -108,9 +108,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} 
+
 .rank .arrow {
-  margin-right: 50px;
-  transform: scale(4) rotate(45deg);
   border-color: white;
+  margin-right: 40px;
+  transition: all 100ms linear;
+}
+
+.rank .down {
+  transform: scale(4) rotate(45deg);
+}
+
+.rank .up {
+  transform: scale(4) rotate(-135deg);
 }
