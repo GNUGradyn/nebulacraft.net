@@ -3,6 +3,13 @@ import "../triangle.css"
 
 interface RankProps {
     name: string
+    perks: string[]
+    missions: Mission[]
+}
+
+export interface Mission {
+    name: string
+    meta: string[]
 }
 
 const Rank: React.FC<RankProps> = (props: RankProps) => {
@@ -41,9 +48,10 @@ const Rank: React.FC<RankProps> = (props: RankProps) => {
                 {expanded && <>
                     <div>
                         <h1>Perks</h1>
+                        {props.perks.map(x => <p>{x}</p>)}
                     </div>
                     <div>
-                        <h1>Requirements</h1>
+                        <h1>Rank missions</h1>
                     </div>
                 </>}
             </div>
