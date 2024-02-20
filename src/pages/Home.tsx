@@ -6,9 +6,9 @@ const Home: React.FC = () => {
         <>
         <h1 style={{textAlign: "center", margin: 50}}>Our Network</h1>
         <div id="gamemodes">
-            <Gamemode name="Survival" img={require("../diamondsword.webp")} description="Traditional Survival Multiplayer"/>
-            <Gamemode name="Creative" img={require("../grass.webp")} description="Creative Plots"/>
-            <Gamemode name="Skyblock" img={require("../sapling.webp")} description="Modern Skyblock"/>
+            <Gamemode name="Survival" img={require("../images/diamondsword.webp")} description="Traditional Survival Multiplayer"/>
+            <Gamemode name="Creative" img={require("../images/grass.webp")} description="Creative Plots"/>
+            <Gamemode name="Skyblock" img={require("../images/sapling.webp")} description="Modern Skyblock"/>
         </div>
         </>
     )

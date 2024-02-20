@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 
 export interface NavbarElementProps { // exported so we can restrict navbar section children to this

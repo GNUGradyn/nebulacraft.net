@@ -30,7 +30,7 @@ body {
   flex-direction: column;
 }
 #imageBackground {
-  background-image: url("space_background.png");
+  background-image: url("images/space_background.png");
   height: 50vh;
   width: 100%;
   display: flex;
@@ -99,4 +99,18 @@ body {
 }
 .navbar-section:hover > .navbar-container{
   transform: scaleY(1);
+}
+.rank {
+  border: solid white 1px;
+  padding-left: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rank .arrow {
+  margin-right: 50px;
+  transform: scale(4) rotate(45deg);
+  border-color: white;
 }

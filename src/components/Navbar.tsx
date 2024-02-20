@@ -5,7 +5,7 @@ import NavbarSection from "./NavbarSection";
 const Navbar: React.FC = () => {
     return (
         <div id="navbar">
-            <Link to={"/"}><img id="sicon" src="/mainLogo.svg"/></Link>
+            <Link to={"/"}><img id="sicon" src="/images/mainLogo.svg"/></Link>
             <div style={{display: "flex"}}>
                 <NavbarSection name="Survival">
                     <NavbarElement name="Ranks" goto="survival/ranks"/>
