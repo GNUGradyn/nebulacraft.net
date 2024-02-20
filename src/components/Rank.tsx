@@ -11,8 +11,13 @@ const Rank: React.FC<RankProps> = (props: RankProps) => {
 
     return (
         <div className="rank" onClick={()=>{setExpanded(!expanded)}}>
-            <h1>{props.name}</h1>
-            <p><i className={expanded?"arrow up":"arrow down"}></i></p>
+            <div className="rank-head">
+                <h1>{props.name}</h1>
+                <p><i className={expanded?"arrow up":"arrow down"}></i></p>
+            </div>
+            <div className="rank-body">
+                {}
+            </div>
         </div>
     )
 }

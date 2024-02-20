@@ -100,7 +100,7 @@ body {
 .navbar-section:hover > .navbar-container{
   transform: scaleY(1);
 }
-.rank {
+.rank-head {
   border: solid white 1px;
   padding-left: 30px;
   border-radius: 10px;
@@ -110,16 +110,16 @@ body {
   align-items: center;
 } 
 
-.rank .arrow {
+.rank-head .arrow {
   border-color: white;
   margin-right: 40px;
   transition: all 100ms linear;
 }
 
-.rank .down {
+.rank-head .down {
   transform: scale(4) rotate(45deg);
 }
 
-.rank .up {
+.rank-head .up {
   transform: scale(4) rotate(-135deg);
 }
