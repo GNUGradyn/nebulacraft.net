@@ -135,6 +135,5 @@ body {
   transition: height 100ms linear;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
 }
