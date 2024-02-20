@@ -54,6 +54,73 @@ const survivalRanks: React.FC = () => {
                     }
                 ]}
             />
+            <Rank name="Adventurer"
+                perks={["2000 bonus claim blocks", "500 claim blocks per hour", "Max 80000 claim blocks", "Max 5 homes", "$80 mission bonus per mission in this rank"]}
+                missions={[
+                    {
+                        name: "Well Trained",
+                        meta: ["Reach MCMMO level 1000"]
+                    },
+                    {
+                        name: "Flamiliar Face",
+                        meta: ["Play for 24 hours"]
+                    },
+                    {
+                        name: "Buisness Owner",
+                        meta: ["Create 5 shops"]
+                    },
+                    {
+                        name: "Economics 101",
+                        meta: ["Make a shop sale 64 times"]
+                    }
+                ]}
+            />
+            <Rank name="Warrior"
+                perks={["2400 bonus claim blocks", "600 claim blocks per hour", "Max 120000 claim blocks", "Max 6 homes", "$160 mission bonus per mission in this rank"]}
+                missions={[
+                    {
+                        name: "Defeater of death",
+                        meta: ["Deal the finishing blow to a wither", "The wither may only take player damage"]
+                    },
+                    {
+                        name: "These Wings Were Made for Flying",
+                        meta: ["Break an elytra"]
+                    },
+                    {
+                        name: "Big spender",
+                        meta: ["Spend 1000 in game currency"]
+                    },
+                    {
+                        name: "Achivement Hunter",
+                        meta: ["Complete 2 advancement trees"]
+                    }
+                ]}
+            />
+            <Rank name="Legend"
+                perks={["2800 bonus claim blocks", "700 claim blocks per hour", "Unlimited claim blocks", "Max 7 homes", "$320 mission bonus per mission in this rank"]}
+                missions={[
+                    {
+                        name: "Diggy Diggy Hole",
+                        meta: ["500,000 blocks mined", "You can check this with /minedblocks"]
+                    },
+                    {
+                        name: "Overacheiver",
+                        meta: ["Complete every advancement"]
+                    },
+                    {
+                        name: "Bragging Rights",
+                        meta: ["Kill a warden by yourself", "The warden can only take player damage"]
+                    },
+                    {
+                        name: "White Whale",
+                        meta: ["Spend 1000 in game currency in a single transaction"]
+                    },
+                    {
+                        name: "Vinyl Collector",
+                        meta: ["Hold every music disc in your inventory at once"]
+                    }
+                ]}
+            />
         </>
     )
 }
