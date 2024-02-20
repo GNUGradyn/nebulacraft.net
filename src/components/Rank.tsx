@@ -10,9 +10,9 @@ const Rank: React.FC<RankProps> = (props: RankProps) => {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <div className="rank">
+        <div className="rank" onClick={()=>{setExpanded(!expanded)}}>
             <h1>{props.name}</h1>
-            <p><i className="arrow down"></i></p>
+            <p><i className={expanded?"arrow up":"arrow down"}></i></p>
         </div>
     )
 }
