@@ -33,8 +33,8 @@ const survivalRanks: React.FC = () => {
                 perks={["1600 bonus claim blocks", "400 claim blocks per hour", "Max 51200 claim blocks", "Max 4 homes", "$40 mission bonus per mission in this rank"]}
                 missions={[
                     {
-                        name: "Skilled",
-                        meta: ["Reach MCMMO level 500"]
+                        name: "Gardener",
+                        meta: ["Harvest 500 crops"]
                     },
                     {
                         name: "Resident",
