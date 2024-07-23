@@ -45,10 +45,6 @@ const survivalRanks: React.FC = () => {
                         meta: ["Sell 10 diamonds to spawn"]
                     },
                     {
-                        name: "Renaissance Man",
-                        meta: ["Reach level 5 in every MCMMO skill"]
-                    },
-                    {
                         name: "Free The End",
                         meta: ["Kill an ender dragon"]
                     }
@@ -58,8 +54,8 @@ const survivalRanks: React.FC = () => {
                 perks={["2000 bonus claim blocks", "500 claim blocks per hour", "Max 80000 claim blocks", "Max 5 homes", "$80 mission bonus per mission in this rank"]}
                 missions={[
                     {
-                        name: "Well Trained",
-                        meta: ["Reach MCMMO level 1000"]
+                        name: "Decked Out",
+                        meta: ["Wear a full suit of diamond armor while wielding a diamond sword"]
                     },
                     {
                         name: "Flamiliar Face",
